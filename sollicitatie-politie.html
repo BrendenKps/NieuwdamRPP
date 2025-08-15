@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sollicitatie Politie — Nieuwdam RP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="icon" href="assets/img/favicon.png">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html"><img src="assets/img/logo.webp" alt="Nieuwdam Roleplay" class="logo-img"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">Over ons</a>
+      <a href="vacatures.html">Sollicitaties</a>
+      <a href="voertuigen.html">Voertuigen</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="page-hero container">
+  <h1>Sollicitatie Politie</h1>
+  <p>Vul het formulier volledig in. Je antwoorden worden naar Discord gepost.</p>
+</section>
+<section class="container">
+
+<form class="form card" id="form-politie" data-webhook="https://discord.com/api/webhooks/1405687376734588989/VReSat5Zb-FtNRzP4RfbOh2fInZLZpPLtCDIDfP-n9TZUQpkQS96hxOC0QEzpY0j-psr">
+  <h2>Politie sollicitatie</h2>
+  <label>IRL Naam <input name="IRL" required placeholder="Je echte naam"></label>
+  <label>Discord Naam <input name="Discord" required placeholder="bijv. Naam#1234"></label>
+  <label>IRL Leeftijd <input type="number" name="Leeftijd" min="12" required placeholder="Minimum 12"></label>
+  <label>Wat is jouw doel binnen de politie? <textarea name="Doel" rows="3" required></textarea></label>
+  <label>Wat zal jij vragen bij een routinecontrole? <textarea name="Routinecontrole" rows="4" required></textarea></label>
+  <label>Wat doe je bij een winkeloverval? <textarea name="Winkeloverval" rows="4" required></textarea></label>
+  <label>Hoe vaak zal jij in stad/dienst zijn? <textarea name="Dienst" rows="3" required></textarea></label>
+  <label>Waarom wil je bij de politie werken? <textarea name="Waarom" rows="4" required placeholder="Vertel kort je motivatie"></textarea></label>
+  <label>Wat weet je al over het politiewerk? <textarea name="Kennis" rows="4" required></textarea></label>
+  <label>Wat zijn je sterke en zwakke punten? <textarea name="Zwakke/goede" rows="3" required></textarea></label>
+  <label>Beschrijf een conflictsituatie en jouw aanpak. <textarea name="SituatieConflict" rows="4" required></textarea></label>
+  <label>Hoe reageer je op discriminerende of agressieve taal? <textarea name="discriminerende" rows="3" required></textarea></label>
+  <label>Hoe overtuig je iemand die niet wil meewerken? <textarea name="Overtuig" rows="3" required></textarea></label>
+  <label>Wat doe je als je tijdens een interventie een twijfelachtige beslissing hebt genomen? <textarea name="Beslissing" rows="3" required></textarea></label>
+  <label>Heb jij nog vragen? <textarea name="Vragen" rows="2" required placeholder="Optioneel: iets dat je wilt weten"></textarea></label>
+  <button class="btn btn-primary" type="submit">Verstuur</button>
+  <p class="hint">Wordt gepost naar Discord via webhook.</p>
+  <div class="msg" aria-live="polite"></div>
+</form>
+
+</section>
+<footer class="footer">
+  <div class="container grid-3">
+    <div><h4>Nieuwdam</h4><p>Roleplay met klasse.</p></div>
+    <div><h5>Navigatie</h5>
+      <ul>
+        <li><a href="about.html">Over ons</a></li>
+        <li><a href="vacatures.html">Sollicitaties</a></li>
+        <li><a href="voertuigen.html">Voertuigen</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div><h5>Social</h5><ul class="socials"><li><a href="#">Discord</a></li><li><a href="#">X</a></li></ul></div>
+  </div>
+  <div class="legal"><div class="container">© <span id="year"></span> Nieuwdam RP.</div></div>
+</footer>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/forms.js"></script>
+</body>
+</html>

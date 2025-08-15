@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NieuwpoortRP — Luxe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="icon" href="assets/img/favicon.png">
+
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html"><img src="assets/img/logo.webp" alt="Nieuwdam Roleplay" class="logo-img"> </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">Over ons</a>
+      <a href="vacatures.html">Sollicitaties</a>
+      <a href="voertuigen.html">Voertuigen</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero container">
+  <h1>Contact</h1>
+  <p>Vragen of samenwerkingen? Neem contact op.</p>
+</section>
+<section class="container two-col">
+  <div>
+    <form class="form card" id="contact-form">
+      <h2>Stuur een bericht</h2>
+      <label>Naam <input name="naam" required></label>
+      <label>Email <input name="email" type="email" required></label>
+      <label>Bericht <textarea name="bericht" required></textarea></label>
+      <button class="btn btn-primary" type="submit">Verstuur</button>
+      <div class="msg" aria-live="polite"></div>
+    </form>
+  </div>
+  <aside class="aside">
+    <div class="aside-card">
+      <h3>Discord</h3>
+      <p>Word lid en stel je vraag in het supportkanaal.</p>
+    </div>
+  </aside>
+</section>
+<footer class="footer">
+  <div class="container grid-3">
+    <div>
+      <h4>Nieuwpoort<span>RP</span></h4>
+      <p>Realistische roleplay met klasse.</p>
+    </div>
+    <div>
+      <h5>Navigatie</h5>
+      <ul>
+        <li><a href="about.html">Over ons</a></li>
+        <li><a href="vacatures.html">Sollicitaties</a></li>
+        <li><a href="voertuigen.html">Voertuigen</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Social</h5>
+      <ul class="socials">
+        <li><a href="#" aria-label="Discord">Discord</a></li>
+        <li><a href="#" aria-label="Twitter">X</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="legal">
+    <div class="container">
+      © <span id="year"></span> NieuwpoortRP. Alle rechten voorbehouden.
+    </div>
+  </div>
+</footer>
+<script src="assets/js/app.js"></script>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  this.querySelector('.msg').textContent = "Bedankt! We reageren snel.";
+  this.reset();
+});
+</script>
+</body>
+</html>

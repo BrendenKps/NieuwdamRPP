@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sollicitatie Pechhulp — Nieuwdam RP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="icon" href="assets/img/favicon.png">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html"><img src="assets/img/logo.webp" alt="Nieuwdam Roleplay" class="logo-img"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">Over ons</a>
+      <a href="vacatures.html">Sollicitaties</a>
+      <a href="voertuigen.html">Voertuigen</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="page-hero container">
+  <h1>Sollicitatie Pechhulp</h1>
+  <p>Vul het formulier volledig in. Je antwoorden worden naar Discord gepost.</p>
+</section>
+<section class="container">
+
+<form class="form card" id="form-pechhulp" data-webhook="https://discord.com/api/webhooks/1405687530862678189/DZJyhejinm_ALo851bmAsinPqPyTEkro6D2mRLdfb4qWA7yIGHXS53nZiU65C2tznACy">
+  <h2>Pechhulp sollicitatie</h2>
+  <label>IRL Naam <input name="IRL" required placeholder="Je echte naam"></label>
+  <label>Discord Naam <input name="Discord" required placeholder="bijv. Naam#1234"></label>
+  <label>IRL Leeftijd <input type="number" name="Leeftijd" min="12" required placeholder="Minimum 12"></label>
+  <label>Wat is jouw doel binnen de pechhulp? <textarea name="Doel" rows="3" required></textarea></label>
+  <label>De auto moet getakeld worden maar de klant twijfelt — hoe overtuig je hem? <textarea name="Routinecontrole" rows="4" required></textarea></label>
+  <label>Je klant weigert te betalen, wat nu? <textarea name="Winkeloverval" rows="4" required></textarea></label>
+  <label>Je klant begint agressief te doen — hoe handel je dit af? <textarea name="SituatieConflict" rows="4" required></textarea></label>
+  <label>Hoe vaak zal jij in stad/dienst zijn? <textarea name="Dienst" rows="3" required></textarea></label>
+  <label>Waarom moeten wij jou aannemen en wat maakt jou geschikt? <textarea name="Waarom" rows="4" required placeholder="Vertel kort je motivatie"></textarea></label>
+  <label>Wat betekent professionaliteit voor jou bij pechhulp? <textarea name="Kennis" rows="4" required></textarea></label>
+  <label>Hoe zou je jezelf omschrijven (sterke/zwakke punten)? <textarea name="Zwakke/goede" rows="3" required></textarea></label>
+  <label>Hoe zorg je ervoor dat je klantvriendelijk én efficiënt blijft? <textarea name="discriminerende" rows="3" required></textarea></label>
+  <label>Heb jij nog vragen? <textarea name="Vragen" rows="2" required placeholder="Optioneel: iets dat je wilt weten"></textarea></label>
+  <button class="btn btn-primary" type="submit">Verstuur</button>
+  <p class="hint">Wordt gepost naar Discord via webhook.</p>
+  <div class="msg" aria-live="polite"></div>
+</form>
+
+</section>
+<footer class="footer">
+  <div class="container grid-3">
+    <div><h4>Nieuwdam</h4><p>Roleplay met klasse.</p></div>
+    <div><h5>Navigatie</h5>
+      <ul>
+        <li><a href="about.html">Over ons</a></li>
+        <li><a href="vacatures.html">Sollicitaties</a></li>
+        <li><a href="voertuigen.html">Voertuigen</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div><h5>Social</h5><ul class="socials"><li><a href="#">Discord</a></li><li><a href="#">X</a></li></ul></div>
+  </div>
+  <div class="legal"><div class="container">© <span id="year"></span> Nieuwdam RP.</div></div>
+</footer>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/forms.js"></script>
+</body>
+</html>
